@@ -1,10 +1,14 @@
 \documentclass[fontsize=12pt,parskip=half]{scrartcl}
 \usepackage[ngerman]{babel}
-\usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{textcomp}
 \usepackage{enumerate}
 
+\usepackage{iftex}
+\ifLuaTeX
+\else
+\usepackage[T1]{fontenc}
+\fi
 
 \usepackage[clausemark=forceboth, juratotoc, juratocnumberwidth=2.5em]{scrjura}
 \useshorthands{'}
